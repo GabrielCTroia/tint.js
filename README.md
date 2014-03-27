@@ -19,7 +19,9 @@ A Tinted Logger for any JS project.
 
 
 > log.register('service', {
->>    fontColor      : 'white',
->>    backgroundColor: 'red',
->>    defaultVal     : 'running'
+>    fontColor      : 'white',
+>    backgroundColor: 'red',
+>    defaultVal     : 'running'
 > });
+
+> log.service('my service');
