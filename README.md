@@ -3,24 +3,23 @@ tint.js
 
 A Tinted Logger for any JS project. 
 
-Usage
-=====
+## Usage ##
 
-// Instantiate the logger
-var log = new TintedLogger({'showTime': false});
-// Set the Msg Levels
-log.allowAll();
-//log.disallowAll(['jpState']);
-var $log = log.debug;
+> var log = new TintedLogger({'showTime': false});
 
-log.register('service', {
-    fontColor      : 'white',
-    backgroundColor: 'red',
-    defaultVal     : 'running'
-});
+> log.allowAll();
 
-log.info('Some good info', window);
-log.error('Just an error');
-log.success('Yehee success');
-log.warn('hmm, this is wrong', this);
-$log('just debugging!');
+> var $log = log.debug;
+
+> log.info('Some good info', window);
+> log.error('Just an error');
+> log.success('Yehee success');
+> log.warn('hmm, this is wrong', this);
+> $log('just debugging!');
+
+
+> log.register('service', {
+>>    fontColor      : 'white',
+>>    backgroundColor: 'red',
+>>    defaultVal     : 'running'
+> });
